@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.println("Digite seu nome");
+    String nome = scanner.nextLine();
+    System.out.println("Digite sua experiência");
+    int experiencia = scanner.nextInt();
+
+    if (experiencia < 1000) {
+      System.out.println("Você é ferro");
+    } else if (experiencia > 1000 && experiencia < 2000) {
+      System.out.println("Você é bronze");
+    } else if (experiencia > 2000 && experiencia < 5000) {
+      System.out.println("Você é prata");
+    } else if (experiencia > 5000 && experiencia < 7000) {
+      System.out.println("Você é ouro");
+    } else if (experiencia > 7000 && experiencia < 8000) {
+      System.out.println("Você é platina");
+    }
+  }
+}
